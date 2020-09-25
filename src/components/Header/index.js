@@ -16,7 +16,7 @@ export default function Header() {
 
       <HeaderContainer>
         <ButtonHeader>
-          <Link to="/"><p>Header</p></Link>
+          <Link to="/"><p>Home</p></Link>
         </ButtonHeader>
         <ButtonHeader>
           <Link to="/planets"><p>Planetas</p></Link>

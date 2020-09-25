@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import api from "../../services/api";
 
 import {
   Container,
+  InputContainer,
+  ButtonSearch,
   Card,
   CardUnit,
   Species,
@@ -14,9 +16,15 @@ import {
 } from "./styles";
 import data from "../../data.json";
 import PageDefault from "../../components/PageDefault";
+import { useHistory } from "react-router-dom";
+
+import logo from "../../assets/button.jpg";
 
 function Home() {
-  const [personagens, setPersonagens] = useState([]);
+  const history = useHistory();
+  const [personagem, setPersonagem] = useState("");
+  const [resultPersonagem, setResultPersonagem] = useState([]);
+  const [erro, setErro] = useState(false);
 
   // async function getPersonagens() {
   //   const response = await api.get("character");
@@ -27,30 +35,98 @@ function Home() {
   //   getPersonagens();
   // }, []);
 
+  function handleShowCharacters(character) {
+    const name = character.name;
+    history.push(`/characters/${name}`, {
+      name: character.name,
+    });
+  }
+
+  const handleSubmitCharacters = useCallback(() => {
+    if (personagem.length === 0) {
+      setResultPersonagem([]);
+    }
+
+    if (personagem.length > 0) {
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].name.includes(personagem)) {
+          setResultPersonagem(data[i]);
+          return;
+        } else {
+          setErro(true);
+        }
+      }
+    } else {
+      alert("Digite algo");
+    }
+  }, [personagem]);
+
   return (
     <PageDefault>
       <Container>
-        <Card>
-          {data.map((personagem) => (
+        <InputContainer>
+          <h2>Pesquise pelo nome do personagem: </h2>
+          <input
+            type="text"
+            name=""
+            placeholder="Ex: Goku"
+            value={personagem}
+            onChange={(e) => setPersonagem(e.target.value)}
+            onin
+          />
+          <ButtonSearch onClick={() => handleSubmitCharacters(personagem)}>
+            <img style={{ width: 40, height: 40 }} src={logo} alt="" />
+          </ButtonSearch>
+        </InputContainer>
+
+        {erro && <p>Erro</p>}
+        {resultPersonagem.length !== 0 ? (
+          <Card>
             <CardUnit>
               <div className="imagem">
-                <img src={personagem.image} />
+                <img src={resultPersonagem.image} />
               </div>
 
               <div className="secao">
-                <Name>Nome: {personagem.name}</Name>
-                <Species>Espécie: {personagem.species}</Species>
-                <Status> Status: {personagem.status}</Status>
+                <Name numberOfLines={1} ellipsizeMode="tail">
+                  Nome: {resultPersonagem.name}
+                </Name>
+                <Species>Espécie: {resultPersonagem.species}</Species>
+                <Status> Status: {resultPersonagem.status}</Status>
                 <OriginPlanet>
-                  Planeta de Origem: {personagem.originPlanet}
+                  Planeta de Origem: {resultPersonagem.originPlanet}
                 </OriginPlanet>
-                <Gender> Gênero: {personagem.gender}</Gender>
+                <Gender> Gênero: {resultPersonagem.gender}</Gender>
 
-                <Series> Série Dragon Ball: {personagem.series}</Series>
+                <Series> Série Dragon Ball: {resultPersonagem.series}</Series>
               </div>
             </CardUnit>
-          ))}
-        </Card>
+          </Card>
+        ) : (
+          <Card>
+            {data.map((personagem) => (
+              <CardUnit onClick={() => handleShowCharacters(personagem)}>
+                <div className="imagem">
+                  <img src={personagem.image} />
+                </div>
+
+                <div className="secao">
+                  <Name numberOfLines={1} ellipsizeMode="tail">
+                    Nome: {personagem.name}
+                  </Name>
+                  <Species>Espécie: {personagem.species}</Species>
+                  <Status> Status: {personagem.status}</Status>
+                  <OriginPlanet>
+                    Planeta de Origem: {personagem.originPlanet}
+                  </OriginPlanet>
+                  <Gender> Gênero: {personagem.gender}</Gender>
+
+                  <Series> Série Dragon Ball: {personagem.series}</Series>
+                </div>
+              </CardUnit>
+            ))}
+          </Card>
+        )}
       </Container>
     </PageDefault>
   );

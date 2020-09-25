@@ -16,7 +16,7 @@ export const Card = styled.div`
   background-size: cover;
   background-repeat: repeat; */
 
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   .secao {
@@ -42,22 +42,53 @@ export const Card = styled.div`
       object-fit: cover;
       object-position: top;
 
-
       border-radius: 10px 10px 0 0;
     }
   }
 `;
 
-export const CardUnit = styled.div`
+export const CardUnit = styled.a`
   border-radius: 10px;
   margin: 10px;
   background: #ddd;
 
-  :hover {
+  cursor: pointer;
+
+  &:hover {
     border: 1px solid #aaa;
-
-
+    transform: scale(1.05);
   }
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex: 1;
+
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 35px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  input {
+    padding: 5px 10px;
+
+    &:focus {
+      border: 2px solid #f90;
+    }
+  }
+`;
+
+export const ButtonSearch = styled.button`
+  border: none !important;
+  background-color: white !important;
+
+  margin-left: 10px;
 `;
 
 export const Species = styled.p``;
@@ -68,6 +99,9 @@ export const OriginPlanet = styled.p``;
 
 export const Gender = styled.p``;
 
-export const Name = styled.p``;
+export const Name = styled.p`
+  font-size: 21px;
+  color: #f00;
+`;
 
 export const Series = styled.p``;
