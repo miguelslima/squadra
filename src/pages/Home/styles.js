@@ -25,7 +25,8 @@ export const Card = styled.div`
     flex-grow: 1;
 
     padding: 20px;
-    /* text-align: center; */
+
+    background: #f90;
   }
 
   .imagem {

@@ -8,7 +8,7 @@ import GlobalStyle from "./styles/global";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GlobalStyle />
       <Routes />
     </BrowserRouter>
