@@ -9,7 +9,7 @@
     "series": "Z",
     "created": "2019-03-04T02:14:19.836Z",
     "url": "/api/character/Frieza",
-    "image": "../images/Frieza.png",
+    "image": "../assets/Frieza.png",
     "__v": 0
   },
   {
@@ -22,7 +22,7 @@
     "series": "DragonBall",
     "created": "2019-03-04T02:17:23.056Z",
     "url": "/api/character/Goku",
-    "image": "../images/Goku.jpg",
+    "image": "../assets/Goku.jpg",
     "__v": 0
   },
   {
@@ -35,7 +35,7 @@
     "series": "Z",
     "created": "2019-03-04T02:17:52.593Z",
     "url": "/api/character/Vegeta",
-    "image": "../images/Vegeta.jpg",
+    "image": "../assets/Vegeta.jpg",
     "__v": 0
   },
   {
@@ -48,7 +48,7 @@
     "series": "Z",
     "created": "2019-03-04T02:18:21.992Z",
     "url": "/api/character/Gohan",
-    "image": "../images/Gohan.jpg",
+    "image": "../assets/Gohan.jpg",
     "__v": 0
   },
   {
@@ -61,7 +61,7 @@
     "series": "Z",
     "created": "2019-03-04T02:18:56.081Z",
     "url": "/api/character/Android16",
-    "image": "../images/Android16.jpg",
+    "image": "../assets/Android16.jpg",
     "__v": 0
   },
   {
@@ -74,7 +74,7 @@
     "series": "DragonBall",
     "created": "2019-03-04T03:18:55.804Z",
     "url": "/api/character/Piccolo",
-    "image": "../images/Piccolo.jpg",
+    "image": "../assets/Piccolo.jpg",
     "__v": 0
   },
   {
@@ -87,7 +87,7 @@
     "series": "Z",
     "created": "2019-03-04T03:19:35.092Z",
     "url": "/api/character/Fat_Majin_Buu",
-    "image": "../images/Fat_Majin_Buu.jpg",
+    "image": "../assets/Fat_Majin_Buu.jpg",
     "__v": 0
   },
   {
@@ -100,7 +100,7 @@
     "series": "Z",
     "created": "2019-03-04T03:20:07.895Z",
     "url": "/api/character/Cell",
-    "image": "../images/Cell.jpg",
+    "image": "../assets/Cell.jpg",
     "__v": 0
   },
   {
@@ -113,7 +113,7 @@
     "series": "Super",
     "created": "2019-03-04T03:20:41.036Z",
     "url": "/api/character/Cunbar",
-    "image": "../images/Cunbar.jpg",
+    "image": "../assets/Cunbar.jpg",
     "__v": 0
   },
   {
@@ -126,7 +126,7 @@
     "series": "Z",
     "created": "2019-03-04T03:21:28.775Z",
     "url": "/api/character/Goten",
-    "image": "../images/Goten.jpg",
+    "image": "../assets/Goten.jpg",
     "__v": 0
   },
   {
@@ -202,7 +202,7 @@
     "_id": "5dacee3d718b1c0017c70e2a",
     "name": "Gabriel",
     "series": "Z",
-    "image": "../images/Gabriel.jpg",
+    "image": "../assets/Gabriel.jpg",
     "created": "2019-10-20T23:31:09.215Z",
     "url": "/api/character/Gabriel",
     "__v": 0
@@ -228,7 +228,7 @@
     "_id": "5e36fbc4440f1d001735f3f0",
     "name": "Broly",
     "series": "Super",
-    "image": "https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwjy4N3Dp7PnAhUkD7kGHQpVCXMQjRx6BAgBEAQ&url=https%3A%2F%2Fdeadlynovels.in%2Fnovel%2Fdragon-ball-broly%2F&psig=AOvVaw2hb45AboeTdWaF4AcfM4C1&ust=1580747968607723",
+    "image": "../assets/Broly.jpg",
     "created": "2020-02-02T16:41:40.578Z",
     "url": "/api/character/Broly",
     "__v": 0
@@ -241,7 +241,7 @@
     "_id": "5e55d2a51e28cd00173fb761",
     "name": "Android18",
     "series": "Z",
-    "image": "https://translate.google.com/?hl=en&tab=iT1",
+    "image": "../assets/Android18.png",
     "created": "2020-02-26T02:06:29.889Z",
     "url": "/api/character/Android18",
     "__v": 0
@@ -254,7 +254,7 @@
     "_id": "5e55d34d1e28cd00173fb762",
     "name": "Chi-Chi",
     "series": "Z",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdragonballuniverse.fandom.com%2Fwiki%2FChi-Chi&psig=AOvVaw1lW4pCGPTgXGweKM9y0cpp&ust=1582769336977000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjkm7aR7ucCFQAAAAAdAAAAABAD",
+    "image": "../assets/Chi-Chi.jpg",
     "created": "2020-02-26T02:09:17.175Z",
     "url": "/api/character/Chi-Chi",
     "__v": 0

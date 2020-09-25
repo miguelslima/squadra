@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 import dragonBall from "../../assets/dragonBall.jpg";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin: 0 30px;
+`;
 
 export const Card = styled.div`
   display: flex;
@@ -14,7 +16,7 @@ export const Card = styled.div`
   background-size: cover;
   background-repeat: repeat; */
 
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   .secao {
@@ -29,9 +31,18 @@ export const Card = styled.div`
   .imagem {
     width: 250px;
 
+    border-radius: 10px 10px 0 0;
+
     img {
       width: 100%;
       height: 300px;
+
+      overflow: center;
+      object-fit: cover;
+      object-position: top;
+
+
+      border-radius: 10px 10px 0 0;
     }
   }
 `;
@@ -40,6 +51,12 @@ export const CardUnit = styled.div`
   border-radius: 10px;
   margin: 10px;
   background: #ddd;
+
+  :hover {
+    border: 1px solid #aaa;
+
+
+  }
 `;
 
 export const Species = styled.p``;

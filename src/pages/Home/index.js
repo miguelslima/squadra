@@ -11,9 +11,9 @@ import {
   Gender,
   Name,
   Series,
-
 } from "./styles";
 import data from "../../data.json";
+import PageDefault from "../../components/PageDefault";
 
 function Home() {
   const [personagens, setPersonagens] = useState([]);
@@ -28,7 +28,7 @@ function Home() {
   // }, []);
 
   return (
-    <>
+    <PageDefault>
       <Container>
         <Card>
           {data.map((personagem) => (
@@ -52,7 +52,7 @@ function Home() {
           ))}
         </Card>
       </Container>
-    </>
+    </PageDefault>
   );
 }
 
