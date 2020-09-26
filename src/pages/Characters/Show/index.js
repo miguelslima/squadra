@@ -3,7 +3,14 @@ import { useHistory } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import PageDefault from "../../../components/PageDefault";
 
-import { Container, Name, Species, OriginPlanet, ButtonBack, ImageBackground } from "./styles";
+import {
+  Container,
+  Name,
+  Species,
+  OriginPlanet,
+  ButtonBack,
+  ImageBackground,
+} from "./styles";
 
 import api from "../../../services/api";
 
@@ -45,21 +52,17 @@ function ShowCharacters() {
 
   return (
     <PageDefault>
+      <ButtonBack onClick={toggleBack}>
+        <FaArrowLeft size={30} />
+        Voltar à pages Personagens
+      </ButtonBack>
       <Container>
-
-
-        <ButtonBack onClick={toggleBack}>
-          <FaArrowLeft size={30} />
-          Voltar à pages Personagens
-        </ButtonBack>
-        <ImageBackground backgroundImage={image}>
         <Name> {name} </Name>
         <div className="cardIndividual">
           <img src={image} alt={`Imagem de ${name}`} />
           <Species>Espécie: {species}</Species>
           <OriginPlanet>Planeta de origem: {originPlanet}</OriginPlanet>
         </div>
-        </ImageBackground>
       </Container>
     </PageDefault>
   );

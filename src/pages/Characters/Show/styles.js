@@ -2,26 +2,25 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   flex: 1;
   flex-direction: column;
 
-  justify-content: center;
   align-items: center;
-  background-color: #f90;
 
   .cardIndividual {
     max-width: 800px;
-    height: 600px;
+    height: 400px;
 
     box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97);
     text-align: center;
 
-    opacity: 1;
+    /* opacity: 1; */
     img {
-      width: 50%;
+      max-width: 800px;
+      max-height: 400px;
       display: inline-block;
       margin-bottom: 50px;
     }
@@ -73,6 +72,8 @@ export const ImageBackground = styled.div`
 export const Name = styled.h1`
   text-align: center;
   font-size: 40px;
+  padding-top: 50px;
+
 `;
 
 export const Species = styled.p`
@@ -85,7 +86,7 @@ export const OriginPlanet = styled.p`
 
 export const ButtonBack = styled.button`
   border: none !important;
-  background-color: #f90 !important;
+  background-color: #fff !important;
 
   display: flex;
   flex-direction: row;

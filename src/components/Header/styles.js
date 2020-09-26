@@ -13,6 +13,12 @@ export const Container = styled.div`
   @media (max-width: 980px) {
     width: 100%;
   }
+
+  @media only screen and (max-width : 420px) {
+    width: 100%;
+    display: inline-block;
+
+  }
 `;
 
 export const HeaderContainer = styled.div`

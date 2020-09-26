@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "../pages/Home";
+import Resume from "../pages/Resume";
 import Characters from "../pages/Characters";
 import ShowCharacters from "../pages/Characters/Show";
 import Planets from "../pages/Planets";
@@ -12,6 +13,7 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/resume" component={Resume} />
         <Route path="/planets" component={Planets} />
         <Route path="/characters" component={Characters} />
         <Route path="/individual/:id" component={ShowCharacters} />

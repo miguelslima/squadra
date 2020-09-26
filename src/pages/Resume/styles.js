@@ -58,26 +58,31 @@ export const CardInitial = styled.div`
 
   .acessar {
     width: 100%;
+
     display: flex;
     flex-direction: row;
 
     justify-content: center;
-    align-items: center;
+    margin: 0 20px;
 
-    @media(max-width: 590px) {
-
-      img {
-        width: 150px;
-        height: 150px;
-      }
-
+    @media(max-width: 660px) {
       a {
-      margin-bottom: 40px;
-        width: 200px;
-        height: 40px;
+        width: 250px;
+        height: 60px;
 
-        font-size: 14px;
+        font-size: 28px;
       }
+    }
+
+    @media only screen and (min-width : 320px) {
+      a {
+        width: 160px;
+        height: 60px;
+
+        font-size: 16px;
+        margin: 0 10px;
+      }
+    }
     }
 
   }
@@ -86,27 +91,19 @@ export const CardInitial = styled.div`
     width: 350px;
     height: 80px;
 
-
-    background: -webkit-radial-gradient( #fff, #00BFFF); /* Safari 5.1 - 6.0 */
-    background: -o-radial-gradient( #fff, #00BFFF); /* Opera 11.6 - 12.0 */
-    background: -moz-radial-gradient( #fff, #00BFFF); /* Firefox 3.6 - 15 */
-    background: radial-gradient(#fff, #00BFFF); /* 标准的语法 */
+    background-color: #f90;
 
     text-align: center;
 
     padding: 15px 40px;
+    margin: 0 10px;
     margin-bottom: 80px;
-
-      font-size: 35px;
+    font-size: 40px;
 
     border: none;
     border-radius: 20px;
 
     transition: opacity 0.3s;
-
-    @media(max-width: 803px) {
-      font-size: 25px;
-    }
 
     &:hover {
       opacity: 0.8;
