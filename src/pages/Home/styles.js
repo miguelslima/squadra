@@ -69,6 +69,13 @@ export const InputContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  .responsividadeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   h2 {
     font-size: 35px;
     margin: 30px;
@@ -80,6 +87,20 @@ export const InputContainer = styled.div`
 
     &:focus {
       border: 2px solid #f90;
+    }
+  }
+
+  @media (max-width: 960px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+
+    h2 {
+      font-size: 25px;
     }
   }
 `;

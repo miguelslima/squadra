@@ -52,9 +52,10 @@ function Home() {
         if (data[i].name.includes(personagem)) {
           setResultPersonagem(data[i]);
           return;
-        } else {
-          setErro(true);
         }
+        // else {
+        //   setErro(true);
+        // }
       }
     } else {
       alert("Digite algo");
@@ -66,17 +67,18 @@ function Home() {
       <Container>
         <InputContainer>
           <h2>Pesquise pelo nome do personagem: </h2>
-          <input
+          <div className="responsividadeButton">
+            <input
             type="text"
             name=""
             placeholder="Ex: Goku"
             value={personagem}
             onChange={(e) => setPersonagem(e.target.value)}
-            onin
-          />
+            />
           <ButtonSearch onClick={() => handleSubmitCharacters(personagem)}>
             <img style={{ width: 40, height: 40 }} src={logo} alt="" />
           </ButtonSearch>
+            </div>
         </InputContainer>
 
         {erro && <p>Erro</p>}
