@@ -18,6 +18,11 @@ export const Container = styled.div`
     margin: 20px 0;
   }
 
+  h3 {
+    color: #fff;
+    margin: 10px 0 ;
+  }
+
   img {
     max-width: 100vw;
   }

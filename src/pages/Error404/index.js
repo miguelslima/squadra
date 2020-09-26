@@ -10,6 +10,7 @@ function Error404() {
     <PageDefault>
       <Container>
         <h1>Página não encontrada!</h1>
+        <h3>Escolha uma rota válida!</h3>
         <img src={error} alt="Animação Goku" />
       </Container>
     </PageDefault>

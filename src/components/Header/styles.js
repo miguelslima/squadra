@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  max-width: 100%;
 
   padding: 10px 100px;
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   background: #f90;
 
   @media (max-width: 980px) {
-    width: 754px;
+    width: 100%;
   }
 `;
 

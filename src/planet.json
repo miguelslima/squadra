@@ -10,7 +10,7 @@
   "created": "2019-03-04T02:16:43.767Z",
   "name": "Majin",
   "url": "/api/planet/Majin",
-  "image": "../images/Majin.jpg",
+  "image": "../assets/Majin.jpg",
   "__v": 0
   },
 
@@ -25,7 +25,7 @@
   "created": "2019-03-04T02:17:00.471Z",
   "name": "Namek",
   "url": "/api/planet/Namek",
-  "image": "../images/Namek.jpg",
+  "image": "./assets/NamekPlanet.png",
   "__v": 0
   },
 
@@ -51,7 +51,7 @@
   "created": "2019-03-04T02:15:58.737Z",
   "name": "Earth",
   "url": "/api/planet/Earth",
-  "image": "../images/Earth.jpg",
+  "image": "../assets/Earth.png",
   "__v": 0
   },
 
@@ -72,7 +72,7 @@
   "created": "2019-03-04T02:16:35.038Z",
   "name": "Vegeta",
   "url": "/api/planet/Vegeta",
-  "image": "../images/Vegeta.jpg",
+  "image": "../assets/PlanetVegeta.png",
   "__v": 0
   }
   ]
