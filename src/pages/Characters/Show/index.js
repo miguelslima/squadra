@@ -46,13 +46,13 @@ function ShowCharacters() {
   return (
     <PageDefault>
       <Container>
-        <ImageBackground backgroundImage={image}>
 
 
         <ButtonBack onClick={toggleBack}>
           <FaArrowLeft size={30} />
           Voltar à pages Personagens
         </ButtonBack>
+        <ImageBackground backgroundImage={image}>
         <Name> {name} </Name>
         <div className="cardIndividual">
           <img src={image} alt={`Imagem de ${name}`} />
