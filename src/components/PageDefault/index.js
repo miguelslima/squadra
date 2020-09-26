@@ -1,25 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../Header'
-import Footer from '../Footer';
+import Header from "../Header";
+import Footer from "../Footer";
 
-import styled from 'styled-components';
-
-const Main = styled.main`
-  flex: 1;
-  justify-content: center;
-`;
+import { Container, Main } from "./styles";
 
 function PageDefault({ children }) {
   return (
-    <>
+    <Container>
       <Header />
-        <Main>
-          {children}
-        </Main>
+      <Main>{children}</Main>
       <Footer />
-    </>
-  )
+    </Container>
+  );
 }
 
 export default PageDefault;

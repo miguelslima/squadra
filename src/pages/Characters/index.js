@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
-import api from "../../services/api";
+import React, { useCallback, useState } from "react";
+// import api from "../../services/api";
 
 import {
   Container,

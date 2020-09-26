@@ -1,73 +1,40 @@
-import React, { useCallback, useEffect, useState } from "react";
-import api from "../../services/api";
+import React from "react";
 
-import {
-  Container,
-  InputContainer,
-  ButtonSearch,
-  Card,
-  CardUnit,
-  Species,
-  Status,
-  OriginPlanet,
-  Gender,
-  Name,
-  Series,
-} from "./styles";
-import data from "../../data.json";
-import PageDefault from "../../components/PageDefault";
+import { Container, CardInitial } from "./styles";
+
+import gokuKame from "../../assets/gokukame.gif";
 import { useHistory } from "react-router-dom";
-
-import logo from "../../assets/button.jpg";
+import logo from '../../assets/logo.png';
 
 function Home() {
   const history = useHistory();
-  const [personagem, setPersonagem] = useState("");
-  const [resultPersonagem, setResultPersonagem] = useState([]);
-  const [erro, setErro] = useState(false);
 
-  // async function getPersonagens() {
-  //   const response = await api.get("character");
-  //   setPersonagens(response.data);
-  //   console.log(response.data);
-  // }
-  // useEffect(() => {
-  //   getPersonagens();
-  // }, []);
-
-  function handleShowCharacters(character) {
-    const name = character.name;
-    history.push(`/characters/${name}`, {
-      name: character.name,
-    });
+  function carregar() {
+    document.getElementById("entrar").style.display = "block";
   }
 
-  const handleSubmitCharacters = useCallback(() => {
-    if (personagem.length === 0) {
-      setResultPersonagem([]);
-    }
-
-    if (personagem.length > 0) {
-      for (var i = 0; i < data.length; i++) {
-        if (data[i].name.includes(personagem)) {
-          setResultPersonagem(data[i]);
-          return;
-        }
-        // else {
-        //   setErro(true);
-        // }
-      }
-    } else {
-      alert("Digite algo");
-    }
-  }, [personagem]);
-
+  function toggleHome() {}
   return (
-    <PageDefault>
-      <Container>
-       <h1>Em construção</h1>
-      </Container>
-    </PageDefault>
+    <Container
+      onLoad={setTimeout(() => {
+        carregar();
+      }, 2500)}
+    >
+      <div id="div">
+        <div className="bg"></div>
+
+        <CardInitial>
+          <img style={{width: 500, height: 300}} src={logo} alt=""/>
+
+          <div className="acessar">
+            <img style={{ width: 350, height: 350 }} src={gokuKame} />
+            <a href="/planets" id="entrar" style={{ color: '#f90', fontFamily: 'Arial', fontStyle: 'italic',   display: "none" }}>
+              Acessar a home
+            </a>
+          </div>
+        </CardInitial>
+      </div>
+    </Container>
   );
 }
 

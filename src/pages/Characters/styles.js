@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import dragonBall from "../../assets/dragonBall.jpg";
-
 export const Container = styled.div`
   margin: 0 30px;
 `;

@@ -25,11 +25,10 @@ export const Container = styled.div`
 
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 
     .planetUnit {
 
-      margin: 10px;
+      margin: 30px 15px;
       height: 450px;
       border: 1px solid #f90;
 
@@ -49,33 +48,40 @@ export const Container = styled.div`
       }
 
       h3 {
-        margin-top: -2%;
+        /* margin-top: -2%; */
         padding: 10px;
-        background: #555
+        background: #eee;
       }
 
       .residents {
         display: flex;
         flex-direction: column;
+        background: #afafaf;
+        padding-top: 25px;
 
-        height: 140px;
+        height: 169px;
 
         overflow-y: auto;
 
         ::-webkit-scrollbar-track {
-          background-color: #f4f4f4;
+          background-color: #f50;
         }
         ::-webkit-scrollbar {
           width: 6px;
-          background: #f4f4f4;
+          background: #faa;
         }
         ::-webkit-scrollbar-thumb {
-          background: #dad7d7;
+          background: #f90;
         }
+
         ul {
           font-size: 20px;
-          color: #f90;
-          font-weight: bold;
+          color: #f0f0f0;
+
+          li {
+            padding: 5px;
+          }
+          /* font-weight: bold; */
         }
       }
     }
