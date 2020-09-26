@@ -10,17 +10,19 @@ export const Container = styled.div`
 
   justify-content: center;
   align-items: center;
+  background-color: #f90;
+
 
 
   .cardIndividual {
-    width: 500px;
+    max-width: 800px;
+    height: 600px;
 
-    background: #ff0;
-
+    box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97);
     text-align: center;
 
     img {
-      max-width: 100%;
+      max-width: 600px;
     }
 
     h1 {
@@ -33,6 +35,14 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const ImageBackground = styled.div`
+
+    background-image: ${(props) => `url(${props.backgroundImage})`};
+    background-size: cover;
+    background-position: bottom;
+
+  `;
 
 export const Name = styled.h1`
   text-align: center;
@@ -48,8 +58,9 @@ export const OriginPlanet = styled.p`
 `;
 
 export const ButtonBack = styled.button`
+
   border: none !important;
-  background-color: white !important;
+  background-color: #f90 !important;
 
   display: flex;
   flex-direction: row;

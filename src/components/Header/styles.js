@@ -1,24 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 10px 60px;
+  width: 100%;
+
+  padding: 10px 100px;
   display: flex;
   flex-direction: row;
-
   align-items: center;
 
   background: #f90;
+
+  @media (max-width: 980px) {
+    width: 754px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
+  @media screen and (max-width: 600px) {
+    float: none;
+    display: inline-flex;
+    width: 100%;
+  }
 `;
-
 
 export const ButtonHeader = styled.div`
   background: #f50;
@@ -29,11 +38,10 @@ export const ButtonHeader = styled.div`
   transition: opacity 0.3s;
 
   p {
-    color: #DDD;
+    color: #ddd;
   }
 
   &:hover {
     opacity: 0.7;
   }
 `;
-

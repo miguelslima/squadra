@@ -23,12 +23,13 @@ import logo from "../../assets/button.jpg";
 function Characters() {
   const history = useHistory();
   const [personagem, setPersonagem] = useState("");
+  const [personagem2, setPersonagem2] = useState("");
   const [resultPersonagem, setResultPersonagem] = useState([]);
   const [erro, setErro] = useState(false);
 
   // async function getPersonagens() {
   //   const response = await api.get("character");
-  //   setPersonagens(response.data);
+  //   setPersonagem2(response.data);
   //   console.log(response.data);
   // }
   // useEffect(() => {
@@ -69,16 +70,16 @@ function Characters() {
           <h2>Pesquise pelo nome do personagem: </h2>
           <div className="responsividadeButton">
             <input
-            type="text"
-            name=""
-            placeholder="Ex: Goku"
-            value={personagem}
-            onChange={(e) => setPersonagem(e.target.value)}
+              type="text"
+              name=""
+              placeholder="Ex: Goku"
+              value={personagem}
+              onChange={(e) => setPersonagem(e.target.value)}
             />
-          <ButtonSearch onClick={() => handleSubmitCharacters(personagem)}>
-            <img style={{ width: 40, height: 40 }} src={logo} alt="Buscar" />
-          </ButtonSearch>
-            </div>
+            <ButtonSearch onClick={() => handleSubmitCharacters(personagem)}>
+              <img style={{ width: 40, height: 40 }} src={logo} alt="Buscar" />
+            </ButtonSearch>
+          </div>
         </InputContainer>
 
         {erro && <p>Erro</p>}
@@ -91,7 +92,7 @@ function Characters() {
 
               <div className="secao">
                 <Name numberOfLines={1} ellipsizeMode="tail">
-                  Nome: {resultPersonagem.name}
+                  {resultPersonagem.name}
                 </Name>
                 <Species>Espécie: {resultPersonagem.species}</Species>
                 <Status> Status: {resultPersonagem.status}</Status>
@@ -113,17 +114,37 @@ function Characters() {
                 </div>
 
                 <div className="secao">
-                  <Name numberOfLines={1} ellipsizeMode="tail">
-                    Nome: {personagem.name}
-                  </Name>
-                  <Species>Espécie: {personagem.species}</Species>
-                  <Status> Status: {personagem.status}</Status>
-                  <OriginPlanet>
-                    Planeta de Origem: {personagem.originPlanet}
-                  </OriginPlanet>
-                  <Gender> Gênero: {personagem.gender}</Gender>
+                  <div className="divison">
+                    <p>Nome:</p>
+                    <Name numberOfLines={1} ellipsizeMode="tail">
+                      {personagem.name}
+                    </Name>
+                  </div>
 
-                  <Series> Série Dragon Ball: {personagem.series}</Series>
+                  <div className="divison">
+                    <p>Espécie:</p>
+                    <Species>{personagem.species}</Species>
+                  </div>
+
+                  <div className="divison">
+                    <p>Status:</p>
+                    <Status>{personagem.status}</Status>
+                  </div>
+
+                  <div className="divison">
+                    <p>Planeta de Origem:</p>
+                    <OriginPlanet>{personagem.originPlanet}</OriginPlanet>
+                  </div>
+
+                  <div className="divison">
+                    <p>Gênero:</p>
+                    <Gender>{personagem.gender}</Gender>
+                  </div>
+
+                  <div className="divison">
+                    <p>Série Dragon Ball:</p>
+                    <Series> {personagem.series}</Series>
+                  </div>
                 </div>
               </CardUnit>
             ))}

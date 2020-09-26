@@ -10,28 +10,36 @@ export const Card = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background: url(${dragonBall});
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat; */
 
   justify-content: center;
   align-items: center;
 
   .secao {
-    width: 250px;
+    width: 300px;
+    height: 215px;
     flex-basis: 30%;
     flex-grow: 1;
 
-    padding: 20px;
+    padding: 15px;
 
     background: #f90;
-    border-radius: 0 0 10px 10px; ;
+    border-radius: 0 0 10px 10px;
+
+    .divison {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
   }
 
   .imagem {
-    width: 250px;
+    width: 300px;
 
     border-radius: 10px 10px 0 0;
 
@@ -115,17 +123,38 @@ export const ButtonSearch = styled.button`
   margin-left: 10px;
 `;
 
-export const Species = styled.p``;
-
-export const Status = styled.p``;
-
-export const OriginPlanet = styled.p``;
-
-export const Gender = styled.p``;
-
-export const Name = styled.p`
+export const Species = styled.text`
   font-size: 21px;
-  color: #f00;
+  color: #f10;
+  padding: 0 10px;
 `;
 
-export const Series = styled.p``;
+export const Status = styled.text`
+  font-size: 21px;
+  color: #f10;
+  padding: 0 10px;
+`;
+
+export const OriginPlanet = styled.text`
+  font-size: 21px;
+  color: #f10;
+  padding: 0 3px;
+`;
+
+export const Gender = styled.text`
+  font-size: 21px;
+  color: #f10;
+  padding: 0 10px;
+`;
+
+export const Name = styled.text`
+  font-size: 21px;
+  color: #f10;
+  padding: 0 10px;
+`;
+
+export const Series = styled.text`
+  font-size: 21px;
+  color: #f10;
+  padding: 0 2px;
+`;
