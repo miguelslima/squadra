@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "345df84a12243b1082445813e6cc357a",
+    "revision": "18570952347498ed335c74242b8aaa32",
     "url": "/squadra/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squadra/static/js/2.23fe91d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e71a82064f744a2ce048",
-    "url": "/squadra/static/js/main.fee4d446.chunk.js"
+    "revision": "f4d2325746c2cee4b15e",
+    "url": "/squadra/static/js/main.11596254.chunk.js"
   },
   {
     "revision": "f49ba1a54c2c7bd9e593",
