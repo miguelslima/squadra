@@ -10,7 +10,7 @@ import Error404 from "../pages/Error404";
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
