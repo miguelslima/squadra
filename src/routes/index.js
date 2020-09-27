@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Resume from "../pages/Resume";
@@ -10,7 +10,7 @@ import Error404 from "../pages/Error404";
 
 export default function Routes() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="squadra">
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
@@ -19,6 +19,6 @@ export default function Routes() {
         <Route path="/individual/:id" component={ShowCharacters} />
         <Route path="*" component={Error404} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

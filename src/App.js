@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 import Routes from "./routes";
 
@@ -7,10 +7,10 @@ import GlobalStyle from "./styles/global";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="squadra">
       <GlobalStyle />
       <Routes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
