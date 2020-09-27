@@ -117,5 +117,17 @@ export const CardInitial = styled.div`
         font-size: 24px;
       }
     }
+
+    @media screen and (max-width: 420px) {
+      a {
+        width: 140px;
+        height: 50px;
+
+        font-size: 16px;
+
+        padding: 15px 0px;
+      }
+    }
+
   }
 `;

@@ -1,39 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex: 1;
-
-  min-height: 100vh;
-
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
 
-  h1 {
-    display: flex;
-    flex-direction: column;
-  }
+  margin: 30px;
 
   .planetCard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: center;
-    align-items: center;
+    width: 640px;
+    margin: 20px 0;
 
     .planetUnit {
-      margin: 30px 15px;
       height: 462px;
       border: 1px solid #f90;
       border-radius: 10px;
 
       text-align: center;
 
-      box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97);
+      /* box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97); */
 
       h2 {
         padding: 5px 0px;
@@ -44,13 +32,12 @@ export const Container = styled.div`
       }
 
       img {
-        width: 300px;
+        width: 100%;
         height: 200px;
       }
 
       button {
         display: flex;
-        width: 100%;
 
         justify-content: space-around;
         align-items: center;
@@ -93,9 +80,15 @@ export const Container = styled.div`
           li {
             padding: 5px;
           }
-          /* font-weight: bold; */
+          font-weight: bold;
         }
       }
     }
+
   }
+    @media screen and (max-width: 420px) {
+      .planetCard {
+        width: 100%;
+      }
+    }
 `;

@@ -75,7 +75,10 @@ export const CardInitial = styled.div`
         width: 200px;
         height: 40px;
 
-        font-size: 14px;
+        font-size: 12px;
+
+        padding: 10px 0;
+
       }
     }
 
@@ -92,6 +95,22 @@ export const CardInitial = styled.div`
         height: 40px;
 
         font-size: 18px;
+      }
+    }
+
+    @media (min-width: 660px) and (max-width: 969px) {
+      img {
+        width: 180px;
+        height: 160px;
+      }
+
+      a {
+        margin-bottom: 15px;
+
+        width: 300px;
+        height: 60px;
+
+        font-size: 22px;
       }
     }
   }
@@ -125,6 +144,13 @@ export const CardInitial = styled.div`
       opacity: 0.8;
     }
 
+    @media screen and (max-width: 420px) {
+      a {
+        font-size: 10px;
+
+      }
+
+    }
 
   }
 `;
