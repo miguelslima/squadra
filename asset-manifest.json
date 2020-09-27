@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/squadra/static/js/main.7d02a0da.chunk.js",
-    "main.js.map": "/squadra/static/js/main.7d02a0da.chunk.js.map",
+    "main.js": "/squadra/static/js/main.a73a0b54.chunk.js",
+    "main.js.map": "/squadra/static/js/main.a73a0b54.chunk.js.map",
     "runtime-main.js": "/squadra/static/js/runtime-main.87269a2b.js",
     "runtime-main.js.map": "/squadra/static/js/runtime-main.87269a2b.js.map",
-    "static/js/2.23fe91d5.chunk.js": "/squadra/static/js/2.23fe91d5.chunk.js",
-    "static/js/2.23fe91d5.chunk.js.map": "/squadra/static/js/2.23fe91d5.chunk.js.map",
+    "static/js/2.3eecb9b1.chunk.js": "/squadra/static/js/2.3eecb9b1.chunk.js",
+    "static/js/2.3eecb9b1.chunk.js.map": "/squadra/static/js/2.3eecb9b1.chunk.js.map",
     "index.html": "/squadra/index.html",
-    "precache-manifest.26bc12563346762cc2f9710db9aa9668.js": "/squadra/precache-manifest.26bc12563346762cc2f9710db9aa9668.js",
+    "precache-manifest.ed87e1bea6a72b0e185338b2b22019d2.js": "/squadra/precache-manifest.ed87e1bea6a72b0e185338b2b22019d2.js",
     "service-worker.js": "/squadra/service-worker.js",
-    "static/js/2.23fe91d5.chunk.js.LICENSE.txt": "/squadra/static/js/2.23fe91d5.chunk.js.LICENSE.txt",
+    "static/js/2.3eecb9b1.chunk.js.LICENSE.txt": "/squadra/static/js/2.3eecb9b1.chunk.js.LICENSE.txt",
     "static/media/404.gif": "/squadra/static/media/404.32ea00c9.gif",
     "static/media/backgroundHome.jpg": "/squadra/static/media/backgroundHome.2323d19d.jpg",
     "static/media/button.jpg": "/squadra/static/media/button.0ab09343.jpg",
@@ -19,7 +19,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.87269a2b.js",
-    "static/js/2.23fe91d5.chunk.js",
-    "static/js/main.7d02a0da.chunk.js"
+    "static/js/2.3eecb9b1.chunk.js",
+    "static/js/main.a73a0b54.chunk.js"
   ]
 }

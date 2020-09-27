@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78b76085f26c3e59e354939e12c34838",
+    "revision": "9067bcb35d6aecb553ad4f3c7087b424",
     "url": "/squadra/index.html"
   },
   {
-    "revision": "1f7e49b7e20c98ef48a1",
-    "url": "/squadra/static/js/2.23fe91d5.chunk.js"
+    "revision": "219626b1fd9c870ea930",
+    "url": "/squadra/static/js/2.3eecb9b1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/squadra/static/js/2.23fe91d5.chunk.js.LICENSE.txt"
+    "url": "/squadra/static/js/2.3eecb9b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "714f1ce9dd05cbde6efe",
-    "url": "/squadra/static/js/main.7d02a0da.chunk.js"
+    "revision": "3a681e96d1bcb178f596",
+    "url": "/squadra/static/js/main.a73a0b54.chunk.js"
   },
   {
     "revision": "f49ba1a54c2c7bd9e593",
