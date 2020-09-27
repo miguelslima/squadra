@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+<img src="https://cdn-cms.bnea.io/sites/default/files/games/logo/195015470097125.png" width="350px" /><br>
+ <b>Dragon Ball - Consumindo API</b>
+</h4>
+<p align="center">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/miguelslima/dragonball-squadra?color=purple">
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/miguelslima/dragonball-squadra?color=purple">
+  <a href="https://www.linkedin.com/in/miguelslima1986/">
+    <img alt="Made by Miguel Lima" src="https://img.shields.io/badge/Dev-miguelslima1986-purple">
+  </a>
 
-## Available Scripts
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-purple">
+</p>
+<br>
 
-In the project directory, you can run:
+### :rocket: Tecnologias usadas nesse projeto
 
-### `yarn start`
+- [React](https://pt-br.reactjs.org/)
+- [React Router Dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+- [Axios](https://github.com/axios/axios)
+- [Styled Components](https://styled-components.com/)
+- [React Icons](https://www.npmjs.com/package/react-icons)
+- [Github Pages](https://pages.github.com/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### :muscle: Projeto
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<b>Page - Dragon Ball</b> projeto desenvolvido consumindo uma API de alguns personagens do Dragon Ball,
+mostrando planetas e alguns personagem da série.
 
-### `yarn test`
+## :information_source: Como usar
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Através do terminal digite as seguintes linhas de comando:
 
-### `yarn build`
+### :computer: Install API
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone this repository
+$ git clone git@github.com:miguelslima/squadra.git
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Go into the repository
+$ cd squadra
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+$ yarnn
 
-### `yarn eject`
+ou se preferir
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+$ npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Run the page
+$ yarn start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ou
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+$ npm start
+```
 
-## Learn More
+### :memo: Licença
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Feito com ❤️ by Miguel Lima :wave:
