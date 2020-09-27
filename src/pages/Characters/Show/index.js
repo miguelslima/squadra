@@ -59,7 +59,18 @@ function ShowCharacters() {
       <Container>
         <Name> {name} </Name>
         <div className="cardIndividual">
-          <img src={image} alt={`Imagem de ${name}`} />
+          <img
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = require("../../../assets/notFound.png");
+            }}
+            style={{
+              height: "150px",
+              minWidth: "150px",
+            }}
+            src={image}
+            alt={`Imagem de ${name}`}
+          />
           <Species>Espécie: {species}</Species>
           <OriginPlanet>Planeta de origem: {originPlanet}</OriginPlanet>
         </div>
