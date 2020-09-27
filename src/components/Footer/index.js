@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { FooterBase } from "./styles";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";

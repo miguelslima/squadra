@@ -108,17 +108,18 @@ function Characters() {
         ) : (
           <Card>
             {data.map((personagem) => (
-              <CardUnit onClick={() => handleShowCharacters(personagem)}>
+              <CardUnit
+                key={personagem._id}
+                onClick={() => handleShowCharacters(personagem)}
+              >
                 <div className="imagem">
-                  <img src={personagem.image} />
+                  <img src={personagem.image} alt="Imagem personagem" />
                 </div>
 
                 <div className="secao">
                   <div className="divison">
                     <p>Nome:</p>
-                    <Name numberOfLines={1} ellipsizeMode="tail">
-                      {personagem.name}
-                    </Name>
+                    <Name>{personagem.name}</Name>
                   </div>
 
                   <div className="divison">

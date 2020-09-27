@@ -5,7 +5,7 @@ import api from "../../services/api";
 import planetas from "../../planet.json";
 import { useHistory } from "react-router-dom";
 
-import { FaArrowUp, FaArrowDown } from 'react-icons/fa'
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 import { Container } from "./styles";
 
@@ -32,8 +32,22 @@ function Planets() {
   //   getPlanets();
   // }, [getPlanets]);
 
-  function toggleResidents() {
-    setOpen(!open);
+  function toggleResidents(id) {
+    console.log("id planeta " + id);
+
+    if (id == "5c7c8a8b12b25c00177aa153") {
+      setOpen(!open);
+      return;
+    } else if (id === "5c7c8a9c12b25c00177aa154") {
+      setOpen1(!open1);
+      return;
+    } else if (id === "5c7c8a5e12b25c00177aa151") {
+      setOpen2(!open2);
+      return;
+    } else if (id === "5c7c8a8312b25c00177aa152") {
+      setOpen3(!open3);
+      return;
+    }
   }
 
   return (
@@ -42,19 +56,20 @@ function Planets() {
         <h1>Planetas</h1>
         <div className="planetCard">
           {planetas.map((planeta) => (
-            <div className="planetUnit">
+            <div key={planeta._id} className="planetUnit">
               <h2>{planeta.name}</h2>
               <img src={planeta.image} alt="" />
-              <button onClick={() => toggleResidents()}>
-              <h3>Residentes</h3>
-              {open ? <FaArrowUp /> : <FaArrowDown /> }
+              {console.log(planeta._id)}
+              <button onClick={() => toggleResidents(planeta._id)}>
+                <h3>Residentes</h3>
+                {open ? <FaArrowUp /> : <FaArrowDown />}
               </button>
 
               {open && (
                 <div className="residents">
                   <ul>
-                    {planeta.residents.map((resident) => (
-                      <li>{resident}</li>
+                    {planeta.residents.map((resident, key) => (
+                      <li key={key}>{resident}</li>
                     ))}
                   </ul>
                 </div>
