@@ -3,8 +3,8 @@
  <b>Dragon Ball - Consumindo API</b>
 </h4>
 <p align="center">
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/miguelslima/dragonball-squadra?color=purple">
-<img alt="Repository size" src="https://img.shields.io/github/repo-size/miguelslima/dragonball-squadra?color=purple">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/miguelslima/squadra?color=purple">
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/miguelslima/squadra?color=purple">
   <a href="https://www.linkedin.com/in/miguelslima1986/">
     <img alt="Made by Miguel Lima" src="https://img.shields.io/badge/Dev-miguelslima1986-purple">
   </a>
@@ -25,8 +25,7 @@
 
 ### :muscle: Projeto
 
-<b>Page - Dragon Ball</b> projeto desenvolvido consumindo uma API de alguns personagens do Dragon Ball,
-mostrando planetas e alguns personagem da série.
+<b>Dragon Ball Page</b> projeto desenvolvido consumindo uma API[(https://dragon-ball-api.herokuapp.com/)] específica de alguns personagens do Dragon Ball, mostrando planetas e alguns personagem da série.
 
 ## :information_source: Como usar
 
@@ -42,17 +41,13 @@ $ git clone git@github.com:miguelslima/squadra.git
 $ cd squadra
 
 # Install dependencies
-$ yarnn
-
+$ yarn
 ou se preferir
-
 $ npm install
 
 # Run the page
 $ yarn start
-
-ou
-
+ou se tiver usando o npm
 $ npm start
 ```
 
