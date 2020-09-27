@@ -25,7 +25,7 @@
 
 ### :muscle: Projeto
 
-<b>Dragon Ball Page</b> projeto desenvolvido consumindo uma API[(https://dragon-ball-api.herokuapp.com/)] específica de alguns personagens do Dragon Ball, mostrando planetas e alguns personagem da série.
+<b>Dragon Ball Page</b> projeto desenvolvido consumindo uma [API](https://dragon-ball-api.herokuapp.com/) específica de alguns personagens do Dragon Ball, mostrando planetas e alguns personagem da série.
 
 ## :information_source: Como usar
 
