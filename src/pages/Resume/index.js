@@ -20,7 +20,7 @@ function Resume() {
 
             <div className="acessar">
               <a href="/planets">Planetas</a>
-              <a href="/characteres">Personagens</a>
+              <a href="/characters">Personagens</a>
 
             </div>
           </CardInitial>

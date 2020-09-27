@@ -12,12 +12,12 @@ export const Container = styled.div`
 
   .cardIndividual {
     max-width: 800px;
-    height: 400px;
+    height: 500px;
 
     box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97);
     text-align: center;
 
-    /* opacity: 1; */
+    padding: 20px 0;
     img {
       max-width: 800px;
       max-height: 400px;

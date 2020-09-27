@@ -17,7 +17,6 @@ export const Container = styled.div`
     flex-direction: column;
   }
 
-
   .planetCard {
     display: flex;
     flex-direction: row;
@@ -27,10 +26,10 @@ export const Container = styled.div`
     align-items: center;
 
     .planetUnit {
-
       margin: 30px 15px;
-      height: 450px;
+      height: 462px;
       border: 1px solid #f90;
+      border-radius: 10px;
 
       text-align: center;
 
@@ -40,6 +39,8 @@ export const Container = styled.div`
         padding: 5px 0px;
         background: #f90;
         text-align: center;
+        border-radius: 10px 10px 0 0;
+        font-size: 30px;
       }
 
       img {
@@ -47,10 +48,19 @@ export const Container = styled.div`
         height: 200px;
       }
 
+      button {
+        display: flex;
+        width: 100%;
+
+        justify-content: space-around;
+        align-items: center;
+
+        border: none !important;
+        background-color: white !important;
+      }
+
       h3 {
-        /* margin-top: -2%; */
         padding: 10px;
-        background: #eee;
       }
 
       .residents {
@@ -58,6 +68,8 @@ export const Container = styled.div`
         flex-direction: column;
         background: #afafaf;
         padding-top: 25px;
+
+        border-radius: 0 0 10px 10px;
 
         height: 169px;
 

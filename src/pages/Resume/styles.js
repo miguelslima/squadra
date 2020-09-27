@@ -65,16 +65,16 @@ export const CardInitial = styled.div`
     justify-content: center;
     margin: 0 20px;
 
-    @media(max-width: 660px) {
+    @media (max-width: 660px) {
       a {
         width: 250px;
         height: 60px;
 
-        font-size: 28px;
+        font-size: 24px;
       }
     }
 
-    @media only screen and (min-width : 320px) {
+    @media screen and (min-width: 320px) {
       a {
         width: 160px;
         height: 60px;
@@ -83,30 +83,39 @@ export const CardInitial = styled.div`
         margin: 0 10px;
       }
     }
+
+    a {
+      width: 350px;
+      height: 80px;
+
+      background-color: #f90;
+
+      text-align: center;
+
+      padding: 15px 40px;
+      margin: 0 10px;
+      margin-bottom: 80px;
+      font-size: 40px;
+
+      border: none;
+      border-radius: 20px;
+
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
-  }
+    @media (min-width: 500px) and (max-width: 659px) {
+      a {
+        padding: 5px 0;
 
-  a {
-    width: 350px;
-    height: 80px;
+        width: 200px;
+        height: 40px;
 
-    background-color: #f90;
-
-    text-align: center;
-
-    padding: 15px 40px;
-    margin: 0 10px;
-    margin-bottom: 80px;
-    font-size: 40px;
-
-    border: none;
-    border-radius: 20px;
-
-    transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.8;
+        font-size: 24px;
+      }
     }
   }
 `;
