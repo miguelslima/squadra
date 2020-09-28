@@ -14,14 +14,18 @@ export const Container = styled.div`
     width: 640px;
     margin: 20px 0;
 
+    padding: 30px 20px 40px 20px;
+
+    box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97);
+
+    border-radius: 10px;
+
     .planetUnit {
       height: 462px;
       border: 1px solid #f90;
       border-radius: 10px;
 
       text-align: center;
-
-      /* box-shadow: 9px 5px 15px rgba(50, 50, 50, 0.97); */
 
       h2 {
         padding: 5px 0px;
@@ -39,11 +43,12 @@ export const Container = styled.div`
       button {
         display: flex;
 
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         border: none !important;
         background-color: white !important;
+
       }
 
       h3 {
@@ -84,11 +89,10 @@ export const Container = styled.div`
         }
       }
     }
-
   }
-    @media screen and (max-width: 420px) {
-      .planetCard {
-        width: 100%;
-      }
+  @media screen and (max-width: 420px) {
+    .planetCard {
+      width: 100%;
     }
+  }
 `;

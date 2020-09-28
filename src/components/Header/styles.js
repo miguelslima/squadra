@@ -33,6 +33,14 @@ export const HeaderContainer = styled.div`
     display: inline-flex;
     width: 100%;
   }
+
+  @media screen and (max-width: 420px) {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin: 10px 0;
+    width: 100%;
+  }
 `;
 
 export const ButtonHeader = styled.div`
@@ -49,5 +57,9 @@ export const ButtonHeader = styled.div`
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media screen and (max-width: 420px) {
+   margin: 0 10px;
   }
 `;

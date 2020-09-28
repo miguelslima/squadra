@@ -34,6 +34,28 @@ function Planets() {
     setOpen(!open);
   }
 
+  // function SampleNextArrow(props) {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <div
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "#f" }}
+  //       onClick={onClick}
+  //     />
+  //   );
+  // }
+
+  // function SamplePrevArrow(props) {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <div
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "green" }}
+  //       onClick={onClick}
+  //     />
+  //   );
+  // }
+
   const settings = {
     dots: true,
     lazyLoad: true,
@@ -42,6 +64,8 @@ function Planets() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 2,
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />
   };
 
   return (

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 // import api from "../../services/api";
 
 import {
@@ -23,7 +23,6 @@ import logo from "../../assets/button.jpg";
 function Characters() {
   const history = useHistory();
   const [personagem, setPersonagem] = useState("");
-  const [personagem2, setPersonagem2] = useState("");
   const [resultPersonagem, setResultPersonagem] = useState([]);
   const [erro, setErro] = useState(false);
 
@@ -51,8 +50,8 @@ function Characters() {
     if (personagem.length > 0) {
       for (var i = 0; i < data.length; i++) {
         if (data[i].name.includes(personagem)) {
-          setResultPersonagem(data[i]);
-          return;
+          setResultPersonagem(data[i], ...data);
+          return data;
         }
         // else {
         //   setErro(true);
